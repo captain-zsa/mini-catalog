@@ -1,0 +1,21 @@
+.catalog {
+    background: url("../images/catalog.jpg") no-repeat left top;
+    padding-top: 220px;
+    padding-bottom: 116px;
+
+    &__title {
+        margin-bottom: 110px;
+    }
+
+    &__list {
+        @include clear-list;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 45px;
+    }
+
+    &__item {
+        max-width: 340px;
+    }
+}
