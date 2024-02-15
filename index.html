@@ -67,6 +67,23 @@
       <ul class="catalog__list"></ul>
     </section>
   </main>
+
+  <div class="modal modal_hide" id="modal_cart">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <h2 class="modal__title">Товар добавлен в корзину</h2>
+      <button type="button" class="modal__close button">Продолжить покупки</button>
+    </div>
+  </div>
+
+  <div class="modal modal_hide" id="modal_cart_error">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <h2 class="modal__title modal__title_red">Ошибка</h2>
+      <p>Такой товар уже был ранее добавлен в корзину</p>
+      <button type="button" class="modal__close button">Выбрать другой</button>
+    </div>
+  </div>
   <script src="js/main.js" defer type="module"></script>
 </body>
 </html>

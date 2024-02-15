@@ -31,7 +31,7 @@ export default (products, template, target, isTargetList = false, templateClass 
         const { id, tag, name, image, description, link, price, compound } = product;
 
         button.addEventListener('click', () => {
-            addProductToCart(product);
+            addProductToCart(product, true);
         });
 
         itemEl.dataset.productId = id;
