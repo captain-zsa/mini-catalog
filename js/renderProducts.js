@@ -38,16 +38,15 @@ export default (products, template, target, isTargetList = false, templateClass 
         imageEl.src = image;
         titleEl.textContent = name;
         linkEl.href = link;
-        tagEl.textContent = tag;
         priceEl.textContent = `${price} ₽`;
 
-        if(description.length) {
+        if(description?.length) {
             descriptionEl.classList.remove('hidden');
             descriptionEl.innerHTML = description;
         } else {
             descriptionEl.classList.add('hidden');
         }
-        if(tag.length) {
+        if(tag?.length) {
             tagEl.classList.remove('hidden');
             tagEl.innerHTML = tag;
         } else {
@@ -55,7 +54,7 @@ export default (products, template, target, isTargetList = false, templateClass 
         }
 
         compoundEl.innerHTML = '';
-        if(compound.length) {
+        if(compound?.length) {
             miniTitleEl.classList.remove('hidden');
             compoundEl.classList.remove('hidden');
 
