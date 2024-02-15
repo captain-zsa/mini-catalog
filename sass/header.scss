@@ -1,0 +1,13 @@
+.header {
+    background-color: #F7F7FA;
+    padding: 20px 0;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__user-menu {
+        margin-left: auto;
+    }
+}

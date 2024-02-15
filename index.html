@@ -8,6 +8,39 @@
 </head>
 
 <body class="page">
+  <header class="page__header header">
+    <div class="header__container container">
+      <div class="header__user-menu user-menu">
+        <div class="user-menu__shopping-cart">
+          <a href="#" class="user-menu__link">
+            <span class="visually-hidden">Корзина</span>
+            <span class="user-menu__count" aria-label="Количество товаров в корзине">10</span>
+          </a>
+
+          <div class="user-menu__cart shopping-cart">
+            <ul class="shopping-cart__list">
+              <li class="shopping-cart__item">
+                <button type="button" class="shopping-cart__delete" aria-label="Удалить товар из корзины"><span></span></button>
+                <a href="#" class="shopping-cart__link">
+                  <img src="images/product.jpg" alt="первый товар">
+                  <p>Увлажняющий мусс</p>
+                  <span>2 750 ₽</span>
+                </a>
+              </li>
+              <li class="shopping-cart__item">
+                <button type="button" class="shopping-cart__delete" aria-label="Удалить товар из корзины"><span></span></button>
+                <a href="#" class="shopping-cart__link">
+                  <img src="images/product.jpg" alt="первый товар">
+                  <p>Увлажняющий мусс</p>
+                  <span>2 750 ₽</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
   <main class="page__main">
     <section class="catalog container">
       <h1 class="catalog__title title">Выбери свой продукт</h1>
