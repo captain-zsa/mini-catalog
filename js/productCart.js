@@ -16,10 +16,12 @@ const openCart = (event) => {
 };
 
 const closeCart = (event) => {
-    event.preventDefault();
-
     if(blockMenu.contains(event.target)) {
         return;
+    }
+
+    if(cart.classList.contains('user-menu__cart_active')) {
+        event.preventDefault();
     }
 
     cart.classList.remove('user-menu__cart_active');
