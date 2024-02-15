@@ -1,6 +1,12 @@
 .header {
     background-color: #F7F7FA;
     padding: 20px 0;
+    box-shadow: 2px 2px 10px 0px #5150761A;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
 
     &__container {
         display: flex;

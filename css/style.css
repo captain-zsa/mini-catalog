@@ -1,3 +1,25 @@
+.hidden {
+  display: none !important;
+}
+
+.button {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #515076;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgba(81, 80, 118, 0.8);
+}
+
 [aria-label] {
   position: relative;
 }
@@ -213,11 +235,18 @@
 .product__button {
   position: relative;
   z-index: 2;
+  margin-top: 10px;
 }
 
 .header {
   background-color: #F7F7FA;
   padding: 20px 0;
+  box-shadow: 2px 2px 10px 0px rgba(81, 80, 118, 0.1019607843);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
 .header__container {
   display: flex;
@@ -267,7 +296,11 @@
   position: absolute;
   right: 0;
   top: 120%;
-  min-width: 340px;
+  min-width: 380px;
+  display: none;
+}
+.user-menu__cart_active {
+  display: block !important;
 }
 
 .shopping-cart {
@@ -298,6 +331,7 @@
   box-shadow: none;
   background-color: transparent;
   cursor: pointer;
+  margin-right: 5px;
 }
 .shopping-cart__delete span {
   position: relative;
@@ -348,4 +382,6 @@
 .shopping-cart__link span {
   font-weight: 700;
   margin-left: auto;
+  min-width: 68px;
+  text-align: right;
 }
