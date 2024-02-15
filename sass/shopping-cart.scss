@@ -27,6 +27,7 @@
         box-shadow: none;
         background-color: transparent;
         cursor: pointer;
+        margin-right: 5px;
 
         span {
             position: relative;
@@ -86,6 +87,8 @@
         span {
             font-weight: 700;
             margin-left: auto;
+            min-width: 68px;
+            text-align: right;
         }
     }
 }
